@@ -7,7 +7,7 @@ export default function RegistrationButton({ gridArea }) {
 
   return (
     <img
-      src={"/registration.svg"}
+      src={"registration.svg"}
       alt={"Registration button"}
       className={classes.img}
       style={{
