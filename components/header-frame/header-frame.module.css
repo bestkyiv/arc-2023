@@ -1,0 +1,32 @@
+.header-frame {
+    position: relative;
+    height: 100vh
+}
+
+.grid{
+    display: grid;
+    grid-template-areas:
+            "registration arc"
+            "countdown arc"
+            "formatAndDate arc";
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: auto auto auto;
+    row-gap: 15vh;
+    column-gap: 20px;
+}
+
+.countdown{
+    grid-area: countdown
+}
+
+.registration-button {
+    grid-area: registration
+}
+
+.format-and-date {
+    grid-area: format-and-date;
+}
+
+.arc {
+    grid-area: arc;
+}

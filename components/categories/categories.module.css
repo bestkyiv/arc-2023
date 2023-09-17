@@ -1,0 +1,13 @@
+.categories{
+
+}
+.cards{
+    position: relative;
+    margin: 20px 0;
+    height: 70vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}

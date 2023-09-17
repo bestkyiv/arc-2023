@@ -1,0 +1,18 @@
+.img {
+    margin-top: 10vh;
+    grid-area: registration
+}
+.img:hover {
+    cursor: pointer;
+    filter: drop-shadow(0 0 10px #FFB904);
+    grid-area: registration
+}
+
+.text{
+    font-family: "Black Ops One";
+    font-size: 50px;
+    text-align: center;
+    filter: drop-shadow(0 0 0 #FFB904);
+}
+
+

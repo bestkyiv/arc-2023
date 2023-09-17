@@ -1,0 +1,21 @@
+.terms-of-participation {
+    height: 100vh;
+    margin: 80px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Horizontal centering */
+    align-items: center;
+    position: relative;
+}
+
+.span {
+    fill: #FFB904;
+}
+
+.img{
+    position: relative;
+    height: 20px;
+    width: auto;
+    bottom: -60px;
+    right: 140px;
+}

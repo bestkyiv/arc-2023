@@ -1,0 +1,21 @@
+.div {
+    padding: 4px;
+    display: inline-block;
+    border-top: 2px solid #FFB904;
+    border-bottom: 2px solid #FFB904;
+    grid-area: countdown;
+    width: 31vw;
+    justify-self: center;
+    align-self: center
+}
+
+.p {
+    font-family: "Black Ops One";
+    font-size: 2.5vw;
+    color: #FFFFFF;
+    display: inline-block;
+    border-top: 2px solid #FFB904;
+    border-bottom: 2px solid #FFB904;
+    width: 30vw;
+    text-align: center;
+}
