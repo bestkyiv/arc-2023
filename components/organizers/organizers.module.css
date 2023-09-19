@@ -1,0 +1,39 @@
+
+
+.container{
+    position: relative;
+    margin: 20%;
+}
+.container::before{
+    content: '';
+    display: inline-block;
+    background: url("../../public/organizers-purple.svg") no-repeat center center/contain;
+    position: absolute;
+    top: -5%;
+    left: -50px;
+    height: 110%;
+    width: 10%;
+    transform: scaleX(-1);
+}
+
+.container::after{
+    content: '';
+    display: inline-block;
+    background: url("../../public/organizers-purple.svg") no-repeat center center/contain;
+    position: absolute;
+    top: -5%;
+    right: -50px;
+    height: 110%;
+    width: 10%;
+}
+.grid{
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.organizer{
+    height: 100px;
+    background-color: white;
+    margin: 5px;
+}

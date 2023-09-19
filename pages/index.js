@@ -9,6 +9,8 @@ import HeaderFrame from "@/components/header-frame/header-frame";
 import About from "@/components/about/about";
 import Categories from "@/components/categories/categories";
 import TermsOfParticipation from "@/components/terms-of-participation/terms-of-participation";
+import Partners from "@/components/partners/partners";
+import Organizers from "@/components/organizers/organizers";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,6 +21,8 @@ export default function App() {
       <About />
       <Categories />
       <TermsOfParticipation />
+      <Partners />
+      {/*<Organizers />*/}
       {/*<Arc fontSize={84}/>;*/}
       {/*<FormatAndDate />*/}
       {/*<RegistrationButton/>*/}
