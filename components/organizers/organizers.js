@@ -9,14 +9,9 @@ export default function Organizers() {
       <div className={classes.container}>
         <div className={classes.grid}>
           {organizers.map((organizer) => (
-            <Organizer organizer={organizer} />
+            <Organizer key={organizer.email} organizer={organizer} />
           ))}
         </div>
-          {/*<div className={classes.row}>*/}
-          {/*    {organizers.slice(8, 11).map((organizer) => (*/}
-          {/*        <Organizer organizer={organizer} />*/}
-          {/*    ))}*/}
-          {/*</div>*/}
       </div>
     </div>
   );
