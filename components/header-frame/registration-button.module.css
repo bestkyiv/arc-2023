@@ -10,9 +10,42 @@
 
 .text{
     font-family: "Black Ops One";
-    font-size: 50px;
+    font-size: 3vw;
     text-align: center;
     filter: drop-shadow(0 0 0 #FFB904);
+    color: white;
+}
+
+.registration{
+    grid-area: registration;
+    /*align-self: center;*/
+    justify-self: center;
+    align-self: center;
+
+    border-image-source: url("../../public/registration-frame.svg");
+    border-image-slice:
+            16 26 20 38;
+    border-image-width:
+            20px 20px 20px 20px;
+    padding: 25px 30px 10px;
+    width: 30vw;
+    /*width: 200px;*/
+    /*height: 200px;*/
+
+}
+
+@media (max-width: 676px){
+    .registration{
+        position: relative;
+        justify-self: end;
+        align-self: center;
+    }
+}
+
+.registration:hover {
+    cursor: pointer;
+    filter: drop-shadow(0 0 10px #FFB904);
+    grid-area: registration
 }
 
 

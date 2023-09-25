@@ -1,18 +1,10 @@
 import ArcSingleWord from "./arc-single-word";
-export default function Arc({ fontSize, gridArea }) {
+import classes from "./arc.module.css";
+export default function Arc({ fontSize }) {
   const words = ["Assemble", "Research", "Compete"];
 
-  const style = {
-    display: "flex",
-    flexDirection: "column",
-    gridArea: gridArea,
-    justifySelf: "center",
-    alignSelf: "center",
-    marginRight: "30px",
-    // width: "300px"
-  };
   return (
-    <div style={style}>
+    <div className={classes.arc}>
       {words.map((word) => (
         <ArcSingleWord key={word} text={word} fontSize={fontSize} />
       ))}

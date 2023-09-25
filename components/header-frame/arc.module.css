@@ -1,0 +1,15 @@
+.arc {
+    display: flex;
+    flex-direction: column;
+    grid-area: arc;
+    justify-self: center;
+    align-self: center;
+    margin-right: 30px;
+}
+
+@media (max-width: 676px){
+    .arc{
+        justify-self: left;
+        align-self: center;
+    }
+}

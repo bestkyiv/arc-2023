@@ -6,18 +6,21 @@ export default function RegistrationButton({ gridArea }) {
     window.open(CONSTANTS.REGISTRATION_LINK, "_blank").focus();
 
   return (
-    <img
-      src={"registration.svg"}
-      alt={"Registration button"}
-      className={classes.img}
-      style={{
-        gridArea: "registration",
-        justifySelf: "center",
-        alignSelf: "center",
-        width: "40vw",
-      }}
-      onClick={handleClick}
-    />
+    // <img
+    //   src={"registration.svg"}
+    //   alt={"Registration button"}
+    //   className={classes.img}
+    //   style={{
+    //     gridArea: "registration",
+    //     justifySelf: "center",
+    //     alignSelf: "center",
+    //     width: "40vw",
+    //   }}
+    //   onClick={handleClick}
+    // />
+    <div className={classes.registration}>
+      <p className={classes.text}>Registration</p>
+    </div>
 
     // <svg
     //   width="50vw"

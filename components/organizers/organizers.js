@@ -9,9 +9,33 @@ export default function Organizers() {
       <div className={classes.container}>
         <div className={classes.grid}>
           {organizers.map((organizer) => (
-            <div key={organizer.email} className={classes.organizer}></div>
+            <Organizer organizer={organizer} />
           ))}
         </div>
+          {/*<div className={classes.row}>*/}
+          {/*    {organizers.slice(8, 11).map((organizer) => (*/}
+          {/*        <Organizer organizer={organizer} />*/}
+          {/*    ))}*/}
+          {/*</div>*/}
+      </div>
+    </div>
+  );
+}
+
+function Organizer({ organizer }) {
+  return (
+    <div key={organizer.email} className={classes.organizer}>
+      <img
+        src={`${organizer.image}`}
+        alt={organizer.image}
+        className={classes.img}
+      />
+      <div className={classes.text}>
+        <p>{organizer.position}</p>
+        <p>{organizer.name}</p>
+        <a href={`mailto:${organizer.email}`} className={classes.link}>
+          {organizer.email}
+        </a>
       </div>
     </div>
   );

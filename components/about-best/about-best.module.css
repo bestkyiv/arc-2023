@@ -1,0 +1,36 @@
+.about-best{
+
+}
+
+.photos{
+    margin: 40px auto 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    align-items: baseline;
+    padding: 0 20px;
+}
+
+.text{
+    font-family: 'Kreadon Bold';
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 30px;
+    /*padding: 0 290px;*/
+    margin: 30px 90px;
+}
+
+.text:first-child {
+    margin: 30px 90px 0 90px;
+}
+
+.text:nth-child(2) {
+    margin: 0 90px 30px 90px;
+}
+
+.img {
+    margin: 0 20px;
+    width: 25%;
+    height: 100%;
+}

@@ -11,6 +11,8 @@ import Categories from "@/components/categories/categories";
 import TermsOfParticipation from "@/components/terms-of-participation/terms-of-participation";
 import Partners from "@/components/partners/partners";
 import Organizers from "@/components/organizers/organizers";
+import AboutBest from "@/components/about-best/about-best";
+import Faq from "@/components/faq/faq";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,8 +23,10 @@ export default function App() {
       <About />
       <Categories />
       <TermsOfParticipation />
-      <Partners />
-      {/*<Organizers />*/}
+      {/*<Partners />*/}
+      <Organizers />
+      <AboutBest />
+      <Faq />
       {/*<Arc fontSize={84}/>;*/}
       {/*<FormatAndDate />*/}
       {/*<RegistrationButton/>*/}
