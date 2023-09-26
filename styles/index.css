@@ -516,22 +516,8 @@ html, body{
 
 }
 
-/* end of css for panel */
-
-/*body {*/
-/*    background-color: #07001B;*/
-/*    overflow: hidden;*/
-/*}*/
-
-/*main {*/
-/*    padding: 50px 100px;*/
-/*}*/
 
 body{
-    background-image: url("../public/background.svg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    /*background-attachment: fixed;*/
     height: 100%;
 }
 
@@ -545,7 +531,7 @@ main{
 
 .section {
     min-height: 100vh;
-    margin: 80px auto;
+    margin: 0 auto;
 }
 
 input::-ms-clear {

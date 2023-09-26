@@ -5,7 +5,7 @@ import React from "react";
 
 export default function AboutBest() {
   return (
-    <div className={"section"}>
+    <div className={"section" + ` ${classes["about-best"]}`}>
       <Title title={"We are BEST Kyiv"} />
       <div className={classes.photos}>
         {Array.from({ length: 3 }, (_, i) => (

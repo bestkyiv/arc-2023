@@ -9,7 +9,30 @@
 
 @media (max-width: 676px){
     .arc{
+        padding-left: 10%;
         justify-self: left;
         align-self: center;
+    }
+}
+
+.word{
+    font-size: 6vw;
+    color: #FFFFFF;
+    font-family: "Black Ops One";
+}
+
+.first-letter{
+    font-size: 6vw;
+    font-family: "Black Ops One";
+    color: #6F27D4;
+    text-shadow: #6F27D4 0px 0px 100px;
+}
+
+@media (max-width: 676px){
+    .word{
+        font-size: 45px;
+    }
+    .first-letter{
+        font-size: 45px;
     }
 }

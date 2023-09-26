@@ -20,7 +20,6 @@ export default function About() {
   };
   return (
     <div className={classes.about + " section"} id={"about"}>
-      <Title title={"About ARC"} />
       <svg
         width="80vw"
         height="80vh"

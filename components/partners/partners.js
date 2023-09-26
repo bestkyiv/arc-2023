@@ -5,8 +5,7 @@ import CONSTANTS from "../../constants";
 export default function Partners() {
   const partners = CONSTANTS.PARTNERS;
   return (
-    <div className={"section"}>
-      <Title title={"Partners"} />
+    <div className={"section" + ` ${classes.partners}`}>
       <div className={classes.partners__grid}>
         {partners.map((partner) => (
           <div key={partner} className={classes.partners__grid_item}>

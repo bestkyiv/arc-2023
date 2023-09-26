@@ -1,5 +1,8 @@
 .categories{
-
+    background-image: url("../../public/categories-bg.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 .cards{
     position: relative;

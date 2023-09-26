@@ -1,3 +1,10 @@
+.partners{
+    background-image: url("../../public/partners-bg.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 .partners__grid{
     margin: 20px 140px;
     display: grid;
