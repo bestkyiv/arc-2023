@@ -1,10 +1,16 @@
 /* FlipCard.css */
 .flip-card {
+    cursor: pointer;
     perspective: 1000px;
-    width: 30vw;
-    height: 30vh;
+    width: 33%;
     position: relative;
     transition: transform 0.5s;
+}
+
+@media (max-width: 676px) {
+    .flip-card{
+        width: 65vw;
+    }
 }
 
 .flip-card-inner {

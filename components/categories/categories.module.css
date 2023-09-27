@@ -4,13 +4,23 @@
     background-repeat: no-repeat;
     background-position: center;
 }
+
 .cards{
     position: relative;
-    margin: 20px 0;
-    height: 70vh;
+    margin: 100px 0;
+    height: 50vh;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
+}
+
+@media (max-width: 676px){
+    .cards{
+        margin: 20px 0;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        height: 90vh;
+    }
 }

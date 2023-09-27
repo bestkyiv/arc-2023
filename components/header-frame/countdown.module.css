@@ -1,5 +1,4 @@
 .div {
-    padding: 4px;
     display: inline-block;
     grid-area: countdown;
     justify-self: center;
@@ -13,12 +12,6 @@
     padding: 18px;
 }
 
-@media (max-width: 676px){
-    .div{
-        justify-self: end;
-    }
-}
-
 .p {
     font-family: "Black Ops One";
     font-size: 3vw;
@@ -27,3 +20,17 @@
     width: 30vw;
     text-align: center;
 }
+
+@media (max-width: 676px){
+    .div{
+        justify-self: end;
+        position: relative;
+        right: 5%;
+        width: 220px;
+    }
+    .p {
+        width: 190px;
+        font-size: 18px;
+    }
+}
+

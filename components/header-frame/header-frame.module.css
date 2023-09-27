@@ -2,13 +2,13 @@
     position: relative;
     height: 100vh;
     background-image: url("../../public/header-frame-bg.svg");
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .grid{
-    padding: 5% 5%;
+    padding-top: 70px;
     position: relative;
     top: 40%;
     transform: translateY(-50%);
@@ -25,6 +25,8 @@
 
 @media (max-width: 676px){
     .grid{
+        margin: 0 auto;
+        max-width: 320px;
         grid-template-areas:
             "arc arc"
             "formatAndDate formatAndDate"
@@ -32,6 +34,7 @@
             "countdown countdown";
         grid-template-columns: repeat(2, auto);
         row-gap: 5vh;
-        /*grid-template-rows: auto auto auto auto;*/
+        padding-top: 10px;
+
     }
 }
