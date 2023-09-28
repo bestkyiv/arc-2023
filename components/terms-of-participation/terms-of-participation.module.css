@@ -16,10 +16,44 @@
     fill: #FFB904;
 }
 
+@media(max-width: 676px){
+    .desktop{
+        display: none;
+    }
+}
+
+
 .img{
     position: relative;
     height: 20px;
     width: auto;
     bottom: -60px;
     right: 140px;
+}
+
+.text-mobile{
+    margin: 20px 50px;
+    font-size: 20px;
+    color: white;
+    font-family: 'Kreadon Bold';
+    line-height: 36px;
+}
+
+.text-mobile > li{
+    position: relative;
+}
+.text-mobile > li:before{
+    content: '';
+    position: absolute;
+    left: -15px;
+top: 15px;
+    width: 7px;
+    height: 7px;
+    border: 2px solid #FFB800;
+}
+
+@media(min-width: 677px){
+    .text-mobile{
+        display: none;
+    }
 }

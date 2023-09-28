@@ -1,6 +1,6 @@
 .faq{
     background-image: url("../../public/faq-bg.svg");
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     margin: 60px 0;

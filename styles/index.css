@@ -1,20 +1,20 @@
 @font-face {
     font-family: 'Black Ops One';
-    src: local('Black Ops One'), url(../fonts/black-ops-one/black-ops-one.ttf) format('truetype');
+    src: local('Black Ops One'), url("../fonts/black-ops-one/black-ops-one.ttf") format('truetype');
     /* other formats include: 'woff2', 'truetype, 'opentype',
                               'embedded-opentype', and 'svg' */
 }
 
 @font-face {
     font-family: 'Kreadon';
-    src: local('Kreadon'), url(../fonts/kreadon/kreadon.otf) format('opentype');
+    src: local('Kreadon'), url("../fonts/kreadon/kreadon.otf") format('opentype');
     /* other formats include: 'woff2', 'truetype, 'opentype',
                               'embedded-opentype', and 'svg' */
 }
 
 @font-face {
     font-family: 'Kreadon Bold';
-    src: local('Kreadon Bold'), url(../fonts/kreadon/kreadon-bold.otf) format('opentype');
+    src: local('Kreadon Bold'), url("../fonts/kreadon/kreadon-bold.otf") format('opentype');
     /* other formats include: 'woff2', 'truetype, 'opentype',
                               'embedded-opentype', and 'svg' */
 }

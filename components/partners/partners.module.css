@@ -12,11 +12,6 @@
     grid-template-columns: repeat(4, 1fr);
     row-gap: 70px;
     column-gap: 40px;
-    /*grid-template-areas:*/
-    /*        "1 2 3 4"*/
-    /*        "translation translation 5 6"*/
-    /*        "translation translation 7 8"*/
-    /*        "9 10 11 12";*/
 }
 
 .partners__grid_item {

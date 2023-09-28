@@ -3,6 +3,7 @@
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+    min-height: 100vh;
 }
 
 .photos-desktop{
@@ -21,7 +22,6 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-
     align-items: baseline;
 }
 
@@ -75,7 +75,7 @@
 .img {
     margin: 0 10px;
     width: 30%;
-    height: 100%;
+    height: 80%;
 }
 
 @media (max-width: 676px){
@@ -84,7 +84,7 @@
     }
     .img {
         margin: 0 20px;
-        width: 80%;
         height: 100%;
+        width: 80%;
     }
 }
