@@ -19,6 +19,13 @@
                               'embedded-opentype', and 'svg' */
 }
 
+@font-face {
+    font-family: 'Press Start 2P';
+    src: local('Press Start 2P'), url("../fonts/press-start-2p/PressStart2P-Regular.ttf") format('truetype');
+    /* other formats include: 'woff2', 'truetype, 'opentype',
+                              'embedded-opentype', and 'svg' */
+}
+
 
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
