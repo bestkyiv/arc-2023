@@ -13,6 +13,7 @@ import Partners from "@/components/partners/partners";
 import Organizers from "@/components/organizers/organizers";
 import AboutBest from "@/components/about-best/about-best";
 import Faq from "@/components/faq/faq";
+import Panel from "@/components/header-frame/panel";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,6 +21,7 @@ export default function App() {
   return (
     <main>
       <HeaderFrame />
+      <Panel />
       <About />
       <Categories />
       <TermsOfParticipation />
@@ -27,6 +29,7 @@ export default function App() {
       <Organizers />
       <AboutBest />
       <Faq />
+
       {/*<Arc fontSize={84}/>;*/}
       {/*<FormatAndDate />*/}
       {/*<RegistrationButton/>*/}

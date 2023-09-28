@@ -5,7 +5,7 @@
     background-position: center;
 }
 
-.photos{
+.photos-desktop{
     margin: 40px auto 100px;
     display: flex;
     flex-direction: row;
@@ -13,9 +13,34 @@
 
     align-items: baseline;
     padding: 0 20px;
+    /*height: 150px;*/
+}
+
+.photos-mobile{
+    margin: 40px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    align-items: baseline;
+}
+
+
+@media (min-width: 677px){
+    .photos-mobile{
+        display: none;
+    }
 }
 
 .text{
+    font-family: 'Kreadon Bold';
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 30px;
+    margin: 30px 90px;
+}
+
+.abbreviation{
     font-family: 'Kreadon Bold';
     color: #FFFFFF;
     text-align: center;
@@ -32,8 +57,34 @@
     margin: 0 90px 30px 90px;
 }
 
+@media (max-width: 676px){
+    .abbreviation{
+        font-size: 16px;
+        margin: 15px 10px;
+    }
+    .text:nth-child(2) {
+        margin: 15px 10px;
+    }
+    .text{
+        font-family: 'Kreadon';
+        font-size: 16px;
+        margin: 15px 10px;
+    }
+}
+
 .img {
-    margin: 0 20px;
-    width: 25%;
+    margin: 0 10px;
+    width: 30%;
     height: 100%;
+}
+
+@media (max-width: 676px){
+    .photos-desktop{
+        display: none;
+    }
+    .img {
+        margin: 0 20px;
+        width: 80%;
+        height: 100%;
+    }
 }

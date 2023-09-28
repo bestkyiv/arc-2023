@@ -7,16 +7,32 @@ export default function Organizers() {
     <div className={"section" + ` ${classes.organizers}`}>
       <Title title={"Organizers"} />
       <div className={classes.container}>
-        <div className={classes.grid}>
-          {organizers.map((organizer) => (
-            <Organizer key={organizer.email} organizer={organizer} />
-          ))}
-        </div>
+        <Desktop organizers={organizers} />
+        <Mobile organizers={organizers} />
       </div>
     </div>
   );
 }
 
+function Mobile({ organizers }) {
+  return (
+    <div className={classes.slider}>
+      {organizers.map((organizer) => (
+        <Organizer key={organizer.email} organizer={organizer} />
+      ))}
+    </div>
+  );
+}
+
+function Desktop({ organizers }) {
+  return (
+    <div className={classes.grid}>
+      {organizers.map((organizer) => (
+        <Organizer key={organizer.email} organizer={organizer} />
+      ))}
+    </div>
+  );
+}
 function Organizer({ organizer }) {
   return (
     <div key={organizer.email} className={classes.organizer}>

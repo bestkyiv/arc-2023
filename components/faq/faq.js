@@ -8,7 +8,14 @@ export default function Faq() {
   return (
     <div className={classes.faq}>
       <Title title={"FAQ"} />
-      <Accordion className={`section`} items={items} width={"40%"} />;
+      <div className={classes.row}>
+        <Accordion className={`section`} items={items} width={"40%"} />
+        <img
+          src={"faq-warning.svg"}
+          alt={"Warning! Registration started"}
+          className={classes.img}
+        />
+      </div>
     </div>
   );
 }

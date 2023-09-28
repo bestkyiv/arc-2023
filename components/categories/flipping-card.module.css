@@ -2,14 +2,15 @@
 .flip-card {
     cursor: pointer;
     perspective: 1000px;
-    width: 33%;
+    width: 40%;
+    height: 50%;
     position: relative;
     transition: transform 0.5s;
 }
 
 @media (max-width: 676px) {
     .flip-card{
-        width: 65vw;
+        width: 55vw;
     }
 }
 

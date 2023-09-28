@@ -104,14 +104,16 @@ body {
 a { text-decoration: none; }
 
 html, body{
-    margin: 0; padding: 0; width: 100%;
-    height: 100%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100%;
     scroll-behavior: smooth;
 }
 
 #header2 {
-    position: absolute;
-    bottom: 0;
+    position: sticky;
+    top: -1%;
     height: 8vh;
     width: 100vw;
     padding: 0 1rem;
@@ -119,26 +121,15 @@ html, body{
     background-size: cover;
     background-position: center 80%;
     border-top: 5px solid #6F27D4;
+    border-bottom: 5px solid #6F27D4;
     text-transform: uppercase;
     z-index: 5;
     display: grid;
     grid-template-columns: calc(50% - 7vw) 14vw calc(50% - 7vw);
-    grid-template-rows: calc(8vh - 5px);
+    grid-template-rows: calc(8vh - 10px);
     grid-template-areas:
     'blurb icon links';
 }
-#header2::before {
-    content: '';
-    position: absolute;
-    top: -5vh;
-    left: 42vw;
-    width: 16vw;
-    height: 5vh;
-    clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
-    background: #6F27D4;
-    border-top: 5px solid #6F27D4;
-}
-
 @media (max-width: 676px){
     #header2 {
         padding: 0 5px;
@@ -148,18 +139,33 @@ html, body{
         'icon links links';
     }
 }
+#header2::before {
+    content: '';
+    position: absolute;
+    top: -5vh;
+    left: 42vw;
+    width: 16vw;
+    height: calc(18vh - 10px);
+    clip-path: polygon(20% 0%, 80% 0%, 100% 27%, 100% 73%, 80% 100%, 20% 100%, 0% 73%, 0% 27%);
+    background: #6F27D4;
+    border-top: 5px solid #6F27D4;
+    border-bottom: 5px solid #6F27D4;
+    z-index: -1;
+}
+
 #header2::after {
     content: '';
     position: absolute;
     top: calc(-5vh + 5px);
-    left: calc(42vw + 5px);
-    width: calc(16vw - 10px);
-    height: calc(5vh - 3px);
-    clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+    left: calc(42vw - 2px);
+    width: calc(16vw + 4px);
+    height: calc(18vh - 20px);
+    clip-path: polygon(20% 0%, 79% 0%, 100% 29%, 100% 71%, 80% 100%, 20% 100%, 0% 71%, 0% 29%);
     background: #42019B;
     background-attachment: fixed;
     background-size: cover;
     background-position: center 80%;
+    z-index: -1;
 }
 
 @media (max-width: 676px){
@@ -167,18 +173,18 @@ html, body{
         top: -3vh;
         left: -1vw;
         width: 24vw;
-        height: 3vh;
+        height: calc(14vh - 10px);
         border-top: 5px solid #6F27D4;
-        clip-path: polygon(00% 0%, 80% 0%, 100% 100%, 0% 100%);
+        clip-path: polygon(0% 0%, 80% 0%, 102% 20%, 102% 80%, 80% 100%, 0% 100%);
     }
     #header2::after {
         content: '';
         position: absolute;
         top: calc(-3vh + 5px);
         left: calc(-3vw + 5px);
-        width: calc(26vw - 10px);
-        height: calc(3vh - 3px);
-        clip-path: polygon(0% 0%, 80% 0%, 100% 100%, 0% 100%);
+        width: calc(26vw - 4px);
+        height: calc(12vh - 7px);
+        clip-path: polygon(0% 0%, 80% 0%, 100% 21%, 100% 80%, 80% 100%, 0% 100%);
     }
 }
 
@@ -245,8 +251,20 @@ html, body{
     }
 }
 
+#wrapper {
+    width: 100vw;
+    padding: 0;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center 80%;
+    position: relative;
+    z-index: 3;
+    overflow-y: scroll;
+}
 
-
+body{
+    position: relative;
+}
 
 
 @media (max-width: 676px) {
@@ -255,17 +273,9 @@ html, body{
     }
 }
 
-
-body{
-    height: 100%;
-}
-
 .text {
     font-family: 'Black Ops One';
     color: aliceblue;
-}
-main{
-    overflow: hidden;
 }
 
 .section {
@@ -280,4 +290,9 @@ input::-ms-clear {
 
 input {
     display: none;
+}
+
+main {
+    position: relative;
+    overflow: hidden;
 }

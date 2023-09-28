@@ -15,7 +15,6 @@ export default function HeaderFrame() {
         <FormatAndDate gridArea={"formatAndDate"} />
         <Arc gridArea={"arc"} />
       </div>
-      <Panel />
     </div>
   );
 }
