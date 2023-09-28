@@ -10,7 +10,7 @@
 
 @media (max-width: 676px) {
     .flip-card{
-        width: 48vw;
+        width: 60vw;
     }
 }
 
@@ -46,5 +46,6 @@
 }
 
 .img{
-    width: 100%;
+    width: 100vw;
+    max-height: 40vh;
 }

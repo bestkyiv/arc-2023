@@ -206,6 +206,16 @@ html, body{
     justify-self: center;
 }
 
+.blurb{
+    position: absolute;
+    display: block;
+    left: 5%;
+}
+
+.blurb > span {
+    display: block;
+}
+
 #header2 .icon {
     grid-area: icon;
     margin-bottom: 10px;
@@ -294,5 +304,7 @@ input {
 
 main {
     position: relative;
-    overflow: hidden;
+    overflow: clip;
 }
+
+

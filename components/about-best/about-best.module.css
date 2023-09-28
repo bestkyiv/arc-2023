@@ -4,6 +4,7 @@
     background-repeat: no-repeat;
     background-position: center;
     min-height: 100vh;
+    padding-top: 10vh;
 }
 
 .photos-desktop{
@@ -60,15 +61,15 @@
 @media (max-width: 676px){
     .abbreviation{
         font-size: 16px;
-        margin: 15px 10px;
+        margin: 15px 40px;
     }
     .text:nth-child(2) {
-        margin: 15px 10px;
+        margin: 15px 40px;
     }
     .text{
         font-family: 'Kreadon';
         font-size: 16px;
-        margin: 15px 10px;
+        margin: 15px 40px;
     }
 }
 

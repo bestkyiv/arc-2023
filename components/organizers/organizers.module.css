@@ -3,6 +3,8 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    min-height: 100vh;
+    padding-top: 20vh;
 }
 
 .container{
@@ -47,7 +49,7 @@
     grid-column: span 3;
     position: relative;
     max-height: 200px;
-    max-width: 170px;
+    max-width: 160px;
     overflow: hidden;
 }
 

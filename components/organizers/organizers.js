@@ -4,7 +4,7 @@ import CONSTANTS from "../../constants";
 export default function Organizers() {
   const organizers = CONSTANTS.ORGANIZERS;
   return (
-    <div className={"section" + ` ${classes.organizers}`}>
+    <div className={"section" + ` ${classes.organizers}`} id="about-us">
       <Title title={"Organizers"} />
       <div className={classes.container}>
         <Desktop organizers={organizers} />

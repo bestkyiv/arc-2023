@@ -3,6 +3,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    padding-top: 8vh;
 }
 
 .cards{
@@ -11,6 +12,7 @@
     height: 50vh;
     display: flex;
     flex-direction: row;
+    row-gap: 50px;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
@@ -21,6 +23,6 @@
         margin: 20px 0;
         flex-direction: column;
         flex-wrap: nowrap;
-        height: 95vh;
+        height: 70vh;
     }
 }
