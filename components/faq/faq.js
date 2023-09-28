@@ -6,7 +6,7 @@ import Title from "@/components/title";
 export default function Faq() {
   const items = CONSTANTS.FAQ;
   return (
-    <div className={classes.faq}>
+    <div className={classes.fasq}>
       <Title title={"FAQ"} />
       <div className={classes.row}>
         <Accordion className={`section`} items={items} width={"40%"} />
