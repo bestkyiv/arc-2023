@@ -23,13 +23,6 @@ function FlippingCard({ category }) {
       <div className={classes["flip-card-inner"]}>
         <div className={classes["flip-card-front"]}>
           {isCaseStudy ? <CaseStudyFront /> : <InnovativeDesignFront />}
-          {/*<img*/}
-          {/*  src={`${*/}
-          {/*    isCaseStudy ? "case-study" : "innovative-design"*/}
-          {/*  }-front.svg`}*/}
-          {/*  alt={isCaseStudy ? "Case Study" : "Innovative design"}*/}
-          {/*  className={classes.img}*/}
-          {/*/>*/}
         </div>
         <div className={classes["flip-card-back"]}>
           {isCaseStudy ? <CaseStudyBack /> : <InnovativeDesignBack />}
@@ -43,8 +36,6 @@ function CaseStudyFront() {
   return (
     <svg
       className={classes.img}
-      // width="80vw"
-      // height="60vh"
       viewBox="0 0 677 670"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

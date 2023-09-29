@@ -14,26 +14,32 @@ import Organizers from "@/components/organizers/organizers";
 import AboutBest from "@/components/about-best/about-best";
 import Faq from "@/components/faq/faq";
 import Panel from "@/components/header-frame/panel";
+import SocialNetworks from "@/components/social-networks/social-networks";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function App() {
   return (
-    <main>
-      <HeaderFrame />
-      <Panel />
-      <About />
-      <Categories />
-      <TermsOfParticipation />
-      {/*<Partners />*/}
-      <Organizers />
-      <AboutBest />
-      <Faq />
+    <>
+      <main>
+        <HeaderFrame />
+        <Panel />
+        <About />
+        <Categories />
+        <TermsOfParticipation />
+        {/*<Partners />*/}
+        <Organizers />
+        <AboutBest />
+        <Faq />
 
-      {/*<Arc fontSize={84}/>;*/}
-      {/*<FormatAndDate />*/}
-      {/*<RegistrationButton/>*/}
-      {/*<Countdown date={CONSTANTS.PROJECT_DATE_FROM}/>*/}
-    </main>
+        {/*<Arc fontSize={84}/>;*/}
+        {/*<FormatAndDate />*/}
+        {/*<RegistrationButton/>*/}
+        {/*<Countdown date={CONSTANTS.PROJECT_DATE_FROM}/>*/}
+      </main>
+      <footer>
+        <SocialNetworks />
+      </footer>
+    </>
   );
 }

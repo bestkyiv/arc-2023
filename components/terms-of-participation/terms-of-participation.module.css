@@ -17,9 +17,20 @@
     fill: #FFB904;
 }
 
+.desktop{
+    max-width: 80vw;
+    height: 70vh;
+}
+
 @media(max-width: 676px){
     .desktop{
         display: none;
+    }
+}
+
+@media(min-width: 1200px){
+    .desktop{
+        max-width: 60vw;
     }
 }
 

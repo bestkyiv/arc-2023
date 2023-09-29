@@ -136,4 +136,31 @@ module.exports = {
         "Для участі потрібні знання в сферах інженерії або бізнес-аналізу. Їх наявність буде перевірена на етапі відбору!",
     },
   ],
+  SOCIAL_NETWORKS: [
+    {
+      name: "Website",
+      icon: "website.svg",
+      link: "https://best-kyiv.org/",
+    },
+    {
+      name: "Instagram",
+      icon: "instagram.svg",
+      link: "https://www.instagram.com/best_kyiv/",
+    },
+    {
+      name: "Telegram",
+      icon: "telegram.svg",
+      link: "https://t.me/bestkyiv",
+    },
+    {
+      name: "Facebook",
+      icon: "facebook.svg",
+      link: "https://www.facebook.com/best.kyiv/?ref=page_internal",
+    },
+    {
+      name: "LinkedIn",
+      icon: "linkedin.svg",
+      link: "https://www.linkedin.com/company/best-kyiv/",
+    },
+  ],
 };

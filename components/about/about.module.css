@@ -12,9 +12,15 @@
 }
 
 .desktop{
-    width: 80vw;
-    height: 90vh;
+    max-width: 80vw;
+    height: 70vh;
     margin-bottom: 0px;
+}
+
+@media(min-width: 1200px){
+    .desktop{
+        max-width: 60vw;
+    }
 }
 
 

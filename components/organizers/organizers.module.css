@@ -11,6 +11,7 @@
     position: relative;
     margin: 150px auto;
     width: 65%;
+    max-width: 1000px;
 }
 .container::before{
     content: '';
@@ -87,8 +88,9 @@
 }
 
 
-.organizer:nth-child(11) > .text{
-    left: 47%;
+.organizer:nth-child(11) > .text > a{
+    position: relative;
+    left: -4%;
 }
 
 .link{

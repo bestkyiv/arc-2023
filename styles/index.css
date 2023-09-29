@@ -121,7 +121,7 @@ html, body{
 #header2 {
     position: sticky;
     top: -1%;
-    height: 8vh;
+    min-height: 8vh;
     width: 100vw;
     padding: 0 1rem;
     background: #42019B;
@@ -137,15 +137,7 @@ html, body{
     grid-template-areas:
     'blurb icon links';
 }
-@media (max-width: 676px){
-    #header2 {
-        padding: 0 5px;
-        grid-template-columns: 1fr 4fr;
-        grid-template-rows: calc(8vh - 5px);
-        grid-template-areas:
-        'icon links links';
-    }
-}
+
 #header2::before {
     content: '';
     position: absolute;
@@ -176,22 +168,28 @@ html, body{
 }
 
 @media (max-width: 676px){
+    #header2 {
+        padding: 0 5px;
+        grid-template-columns: 1fr 4fr;
+        grid-template-areas:
+        'icon links links';
+    }
     #header2::before {
         top: -3vh;
         left: -1vw;
-        width: 24vw;
-        height: calc(14vh - 10px);
+        width: 26vw;
+        height: 12vh;
         border-top: 5px solid #6F27D4;
-        clip-path: polygon(0% 0%, 80% 0%, 102% 20%, 102% 80%, 80% 100%, 0% 100%);
+        clip-path: polygon(0% 0%, 80% 0%, 100% 20%, 100% 84%, 80% 100%, 0% 100%);
     }
     #header2::after {
         content: '';
         position: absolute;
         top: calc(-3vh + 5px);
-        left: calc(-3vw + 5px);
-        width: calc(26vw - 4px);
-        height: calc(12vh - 7px);
-        clip-path: polygon(0% 0%, 80% 0%, 100% 21%, 100% 80%, 80% 100%, 0% 100%);
+        left: calc(-2vw + 5px);
+        width: calc(28vw - 4px);
+        height: calc(12vh - 10px);
+        clip-path: polygon(0% 0%, 76% 0%, 100% 26%, 100% 81%, 76% 100%, 0% 100%);
     }
 }
 
