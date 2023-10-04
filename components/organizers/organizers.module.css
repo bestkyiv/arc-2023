@@ -49,8 +49,8 @@
 .organizer{
     grid-column: span 3;
     position: relative;
-    max-height: 200px;
-    max-width: 160px;
+    max-height: 280px;
+    max-width: 240px;
     overflow: hidden;
 }
 
@@ -167,5 +167,13 @@
 @media (min-width: 993px) {
     .slider{
         display: none;
+    }
+}
+
+@media (min-width: 1200px) {
+    .text{
+        line-height: 12px;
+        font-size: 10px;
+
     }
 }

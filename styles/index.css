@@ -175,6 +175,7 @@ html, body{
         'icon links links';
     }
     #header2::before {
+
         top: -3vh;
         left: -1vw;
         width: 26vw;
@@ -189,7 +190,7 @@ html, body{
         left: calc(-2vw + 5px);
         width: calc(28vw - 4px);
         height: calc(12vh - 10px);
-        clip-path: polygon(0% 0%, 76% 0%, 100% 26%, 100% 81%, 76% 100%, 0% 100%);
+        clip-path: polygon(0% 0%, 76% 0%, 100% 26%, 100% 82%, 76% 100%, 0% 100%);
     }
 }
 
@@ -224,7 +225,7 @@ html, body{
 #header2 .icon {
     grid-area: icon;
     margin-bottom: 10px;
-    margin: 0 auto 10px;
+    margin: 10px auto 10px;
 }
 
 #header2 img {

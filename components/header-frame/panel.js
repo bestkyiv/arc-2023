@@ -11,7 +11,7 @@ export default function Panel() {
         </span>
       </div>
       <div className={"icon"}>
-        <img src={"favicon.svg"} alt={"Logo"} className={"logo"} />
+        <img src={"logo.svg"} alt={"Logo"} className={"logo"} />
       </div>
       <div className={"links"}>
         <Link href="#about">Про проєкт</Link>
