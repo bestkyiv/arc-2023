@@ -20,13 +20,13 @@
             "formatAndDate arc";
     grid-template-columns: repeat(2, auto);
     grid-template-rows: auto auto auto;
-    row-gap: 15vh;
+    row-gap: 8vh;
     column-gap: 20px;
 }
 
 @media (max-width: 676px){
     .grid{
-        margin: 0 auto;
+        margin: 30px auto 0;
         max-width: 320px;
         grid-template-areas:
             "arc arc"

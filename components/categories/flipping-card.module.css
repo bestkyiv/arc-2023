@@ -6,12 +6,7 @@
     height: 50%;
     position: relative;
     transition: transform 0.5s;
-}
-
-@media (max-width: 676px) {
-    .flip-card{
-        width: 60vw;
-    }
+    filter: drop-shadow(0 0 10px #41009C);
 }
 
 .flip-card-inner {
@@ -37,7 +32,7 @@
 }
 
 .flip-card-front {
-
+    width: 100%;
     color: white;
 }
 
@@ -46,6 +41,14 @@
 }
 
 .img{
-    width: 100vw;
-    max-height: 40vh;
+    width: 100%;
+}
+
+@media (max-width: 676px) {
+    .flip-card{
+        width: 80vw;
+    }
+    .img{
+        height: 100%;
+    }
 }

@@ -4,6 +4,7 @@
     background-repeat: no-repeat;
     background-position: center;
     padding-top: 8vh;
+    max-width: 1000px;
 }
 
 .cards{
@@ -24,5 +25,6 @@
         flex-direction: column;
         flex-wrap: nowrap;
         height: 70vh;
+        row-gap: 20px;
     }
 }

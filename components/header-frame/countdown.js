@@ -7,15 +7,7 @@ function Countdown({ date, gridArea }) {
   if (days + hours + minutes + seconds <= 0) {
     return (
       <p
-        style={{
-          fontFamily: "Black Ops One",
-          fontSize: "3vw",
-          color: "#FFFFFF",
-          display: "inline-block",
-          borderTop: "2px solid #FFB904",
-          borderBottom: "2px solid #FFB904",
-          width: "220px",
-        }}
+          className={classes.p}
       >
         Already in progress
       </p>

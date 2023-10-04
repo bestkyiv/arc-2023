@@ -1,14 +1,14 @@
 .social-networks{
     position: relative;
-    height: 90px;
+    height: 80px;
     width: 80vw;
     left: 50%;
     transform: translateX(-50%);
     padding: 1rem 5rem;
-    background: #6F27D4;
+    background: #531CA1;
     background-size: cover;
     background-position: center 80%;
-    border-top: 5px solid #6F27D4;
+    border-top: 5px solid #531CA1;
     text-transform: uppercase;
     z-index: 5;
     display: flex;
@@ -26,9 +26,9 @@
     left: 50%;
     transform: translateX(-50%);
     width: 80vw;
-    height: 85px;
+    height: 75px;
     clip-path: polygon(10% 0%, 90% 0%, 99% 100%, 20% 100%, 1% 100%);
-    background: #42019B;
+    background: #25005B;
     z-index: -100;
 }
 
@@ -53,7 +53,6 @@
         margin-top: 100px;
     }
     .social-networks::before {
-        background: #42019B;
         width: 100vw;
         height: 75px;
     }

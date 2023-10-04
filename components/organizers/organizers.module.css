@@ -71,27 +71,28 @@
     height: 100%;
 }
 
+.icon{
+    height: 15px;
+    width: 15px;
+}
+
 .text{
     position: absolute;
 
     line-height: 10px;
 
-    bottom: 10%;
+    bottom: 5%;
 
     transform: translate(-50%, 5%);
     font-family: 'Press Start 2P';
-    font-size: 6px;
+    font-size: 8px;
     left: 50%;
     text-align: center;
     color: white;
-    width: 75%;
+    width: 85%;
 }
 
 
-.organizer:nth-child(11) > .text > a{
-    position: relative;
-    left: -4%;
-}
 
 .link{
     color: white;
@@ -111,7 +112,7 @@
     height: 8px;
 }
 
-.slider > div {
+.slider > a {
     flex-shrink: 0;
     width: 200px;
     height: 262px;

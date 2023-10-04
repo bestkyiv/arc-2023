@@ -25,15 +25,15 @@
 .first-letter{
     font-size: 6vw;
     font-family: "Black Ops One";
-    color: #6F27D4;
-    text-shadow: #6F27D4 0px 0px 100px;
+    color: rgba(111, 39, 212, 0.75);
+    text-shadow: rgba(111, 39, 212, 0.75) 0px 0px 100px;
 }
 
 @media (max-width: 676px){
     .word{
-        font-size: 45px;
+        font-size: 55px;
     }
     .first-letter{
-        font-size: 45px;
+        font-size: 55px;
     }
 }

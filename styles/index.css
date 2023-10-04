@@ -124,11 +124,11 @@ html, body{
     min-height: 8vh;
     width: 100vw;
     padding: 0 1rem;
-    background: #42019B;
+    background: #25005B;
     background-size: cover;
     background-position: center 80%;
-    border-top: 5px solid #6F27D4;
-    border-bottom: 5px solid #6F27D4;
+    border-top: 5px solid #531CA1;
+    border-bottom: 5px solid #531CA1;
     text-transform: uppercase;
     z-index: 5;
     display: grid;
@@ -146,9 +146,9 @@ html, body{
     width: 16vw;
     height: calc(18vh - 10px);
     clip-path: polygon(20% 0%, 80% 0%, 100% 27%, 100% 73%, 80% 100%, 20% 100%, 0% 73%, 0% 27%);
-    background: #6F27D4;
-    border-top: 5px solid #6F27D4;
-    border-bottom: 5px solid #6F27D4;
+    background: #531CA1;
+    border-top: 5px solid #531CA1;
+    border-bottom: 5px solid #531CA1;
     z-index: -1;
 }
 
@@ -160,7 +160,7 @@ html, body{
     width: calc(16vw + 4px);
     height: calc(18vh - 20px);
     clip-path: polygon(20% 0%, 79% 0%, 100% 29%, 100% 71%, 80% 100%, 20% 100%, 0% 71%, 0% 29%);
-    background: #42019B;
+    background: #25005B;
     background-attachment: fixed;
     background-size: cover;
     background-position: center 80%;
@@ -179,7 +179,7 @@ html, body{
         left: -1vw;
         width: 26vw;
         height: 12vh;
-        border-top: 5px solid #6F27D4;
+        /*border-top: 5px solid #6F27D4;*/
         clip-path: polygon(0% 0%, 80% 0%, 100% 20%, 100% 84%, 80% 100%, 0% 100%);
     }
     #header2::after {
@@ -238,7 +238,7 @@ html, body{
 #header2 .links {
     grid-area: links;
     flex-flow: row wrap;
-    font-size: 1vw;
+    font-size: 1.2vw;
     font-family: 'Kreadon';
 }
 #header2 .links a {
@@ -263,6 +263,7 @@ html, body{
     #header2 .links a{
         margin: 0 5px 0px 5px;
         font-size: 2.2vw;
+        font-family: 'Kreadon Bold';
     }
 }
 

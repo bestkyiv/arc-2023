@@ -25,7 +25,7 @@ export default function About() {
 
   const lastStyle = {
     ...style,
-    fontSize: "60px",
+    fontSize: "56px",
   };
 
   const mobileLastStyle = {
@@ -45,6 +45,50 @@ export default function About() {
     </div>
   );
 }
+
+function DesktopSvg({ style, textStyle, lastStyle }) {
+  return (
+        <svg className={classes.desktop} viewBox="0 0 1751 773" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M1528.22 77.584L1536 89.7134V180.879H1571.89L1605.19 180.879L1748 180.879V199.497V232V254.438V391.122L1735.44 404.306L1704.62 436.65V718.224L1654.91 770.394H1571.89L1546.54 770.394H1229.87L1204.52 770.394H884.878H859.526H733.259L689 736L624.5 689.603H461.338L434.991 688.631H357.939L333 666L306.723 643.861H294.308H71.1048L49.5 599.5L33.3242 564.132L3 535.775V335.444L33.3239 303.621V77.584L33.3242 45L184.837 45.0001L287.078 45L331.592 77.584L1528.22 77.584Z" fill="#42019B" fill-opacity="0.5" stroke="#FFB800" stroke-width="5" stroke-miterlimit="16"/>
+          <path d="M479.469 2.00005L442.281 33.0001L383.219 33.0001L418.219 2.00006L479.469 2.00005Z" fill="#FFB904" fill-opacity="0.5"/>
+          <path d="M383.219 2.00006L346.031 33.0001L334 33.0001L334 2.00006L383.219 2.00006Z" fill="#FFB904" fill-opacity="0.5"/>
+          <path d="M479.469 2.00005L442.281 33.0001L383.219 33.0001L418.219 2.00006L479.469 2.00005Z" stroke="#FFB904" stroke-opacity="0.5" stroke-width="3"/>
+          <path d="M383.219 2.00006L346.031 33.0001L334 33.0001L334 2.00006L383.219 2.00006Z" stroke="#FFB904" stroke-opacity="0.5" stroke-width="3"/>
+          <path d="M576.219 2.00005L539.031 33.0001L479.969 33.0001L514.969 2.00006L576.219 2.00005Z" fill="#FFB904" fill-opacity="0.5" stroke="#FFB904" stroke-opacity="0.5" stroke-width="3"/>
+          <path d="M672.219 2.00005L635.031 33.0001L575.969 33.0001L610.969 2.00006L672.219 2.00005Z" fill="#FFB904" fill-opacity="0.5" stroke="#FFB904" stroke-opacity="0.5" stroke-width="3"/>
+          <path d="M768.219 2.00005L731.031 33.0001L671.969 33.0001L706.969 2.00006L768.219 2.00005Z" fill="#FFB904" fill-opacity="0.5" stroke="#FFB904" stroke-opacity="0.5" stroke-width="3"/>
+          <path d="M864.219 2.00005L827.031 33.0001L767.969 33.0001L802.969 2.00006L864.219 2.00005Z" fill="#FFB904" fill-opacity="0.5" stroke="#FFB904" stroke-opacity="0.5" stroke-width="3"/>
+          <path d="M960.219 2.00005L923.031 33.0001L863.969 33.0001L898.969 2.00006L960.219 2.00005Z" fill="#FFB904" fill-opacity="0.5" stroke="#FFB904" stroke-opacity="0.5" stroke-width="3"/>
+          <path d="M1056.22 2.00005L1019.03 33.0001L959.969 33.0001L994.969 2.00006L1056.22 2.00005Z" fill="#FFB904" fill-opacity="0.5" stroke="#FFB904" stroke-opacity="0.5" stroke-width="3"/>
+          <path d="M1152.22 2.00005L1115.03 33.0001L1055.97 33.0001L1090.97 2.00006L1152.22 2.00005Z" fill="#FFB904" fill-opacity="0.5" stroke="#FFB904" stroke-opacity="0.5" stroke-width="3"/>
+          <path d="M1248.22 2.00005L1211.03 33.0001L1151.97 33.0001L1186.97 2.00006L1248.22 2.00005Z" fill="#FFB904" fill-opacity="0.5" stroke="#FFB904" stroke-opacity="0.5" stroke-width="3"/>
+          <path d="M1344.22 2.00005L1307.03 33.0001L1247.97 33.0001L1282.97 2.00006L1344.22 2.00005Z" fill="#FFB904" fill-opacity="0.5" stroke="#FFB904" stroke-opacity="0.5" stroke-width="3"/>
+          <path d="M1403.03 2.00005L1403.03 33.0001L1343.97 33.0001L1378.97 2.00005L1403.03 2.00005Z" fill="#FFB904" fill-opacity="0.5" stroke="#FFB904" stroke-opacity="0.5" stroke-width="3"/>
+          <text x="100" y="150">
+            <tspan x="100" y="200" style={style}>
+              Assemble, Research, Compete
+            </tspan>
+            <tspan x="100" y="300" style={textStyle}>
+              ARC — <tspan className={classes.span}>офлайн</tspan> інженерні
+              змагання для студентів.
+            </tspan>
+            <tspan x="100" y="380" style={textStyle}>
+              Збирай власну команду, або знайди нову на проєкті.
+            </tspan>
+            <tspan x="100" y="460" style={textStyle}>
+              Обирай категорію та пропонуй своє вирішення проблеми.
+            </tspan>
+            <tspan x="100" y="540" style={textStyle}>
+              Покажи компаніям України свої навички.
+            </tspan>
+            <tspan x="700" y="700" style={lastStyle}>
+              FIND YOUR ENGINEERING SP<tspan className={classes.span}>ARC</tspan>
+            </tspan>
+          </text>
+        </svg>
+  );
+}
+
 function MobileSvg({ style, textStyle, lastStyle }) {
   return (
     <>
@@ -101,148 +145,5 @@ function MobileSvg({ style, textStyle, lastStyle }) {
         </text>
       </svg>
     </>
-  );
-}
-function DesktopSvg({ style, textStyle, lastStyle }) {
-  return (
-    <svg
-      className={classes.desktop}
-      height="200px"
-      viewBox="0 0 1728 833"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path
-        d="M537.469 1.99993L500.281 33L441.219 33L476.219 1.99993L537.469 1.99993Z"
-        fill="#FFB904"
-        fill-opacity="0.5"
-      />
-      <path
-        d="M441.219 1.99994L404.031 33L392 33L392 1.99994L441.219 1.99994Z"
-        fill="#FFB904"
-        fill-opacity="0.5"
-      />
-      <path
-        d="M537.469 1.99993L500.281 33L441.219 33L476.219 1.99993L537.469 1.99993Z"
-        stroke="#FFB904"
-        stroke-opacity="0.5"
-        stroke-width="3"
-      />
-      <path
-        d="M441.219 1.99994L404.031 33L392 33L392 1.99994L441.219 1.99994Z"
-        stroke="#FFB904"
-        stroke-opacity="0.5"
-        stroke-width="3"
-      />
-      <path
-        d="M634.219 1.99993L597.031 33L537.969 33L572.969 1.99993L634.219 1.99993Z"
-        fill="#FFB904"
-        fill-opacity="0.5"
-        stroke="#FFB904"
-        stroke-opacity="0.5"
-        stroke-width="3"
-      />
-      <path
-        d="M730.219 1.99993L693.031 33L633.969 33L668.969 1.99993L730.219 1.99993Z"
-        fill="#FFB904"
-        fill-opacity="0.5"
-        stroke="#FFB904"
-        stroke-opacity="0.5"
-        stroke-width="3"
-      />
-      <path
-        d="M826.219 1.99993L789.031 33L729.969 33L764.969 1.99993L826.219 1.99993Z"
-        fill="#FFB904"
-        fill-opacity="0.5"
-        stroke="#FFB904"
-        stroke-opacity="0.5"
-        stroke-width="3"
-      />
-      <path
-        d="M922.219 1.99993L885.031 33L825.969 33L860.969 1.99993L922.219 1.99993Z"
-        fill="#FFB904"
-        fill-opacity="0.5"
-        stroke="#FFB904"
-        stroke-opacity="0.5"
-        stroke-width="3"
-      />
-      <path
-        d="M1018.22 1.99993L981.031 33L921.969 33L956.969 1.99993L1018.22 1.99993Z"
-        fill="#FFB904"
-        fill-opacity="0.5"
-        stroke="#FFB904"
-        stroke-opacity="0.5"
-        stroke-width="3"
-      />
-      <path
-        d="M1114.22 1.99993L1077.03 33L1017.97 33L1052.97 1.99993L1114.22 1.99993Z"
-        fill="#FFB904"
-        fill-opacity="0.5"
-        stroke="#FFB904"
-        stroke-opacity="0.5"
-        stroke-width="3"
-      />
-      <path
-        d="M1210.22 1.99993L1173.03 33L1113.97 33L1148.97 1.99993L1210.22 1.99993Z"
-        fill="#FFB904"
-        fill-opacity="0.5"
-        stroke="#FFB904"
-        stroke-opacity="0.5"
-        stroke-width="3"
-      />
-      <path
-        d="M1306.22 1.99993L1269.03 33L1209.97 33L1244.97 1.99993L1306.22 1.99993Z"
-        fill="#FFB904"
-        fill-opacity="0.5"
-        stroke="#FFB904"
-        stroke-opacity="0.5"
-        stroke-width="3"
-      />
-      <path
-        d="M1402.22 1.99993L1365.03 33L1305.97 33L1340.97 1.99993L1402.22 1.99993Z"
-        fill="#FFB904"
-        fill-opacity="0.5"
-        stroke="#FFB904"
-        stroke-opacity="0.5"
-        stroke-width="3"
-      />
-      <path
-        d="M1461.03 1.99993L1461.03 33L1401.97 33L1436.97 1.99993L1461.03 1.99993Z"
-        fill="#FFB904"
-        fill-opacity="0.5"
-        stroke="#FFB904"
-        stroke-opacity="0.5"
-        stroke-width="3"
-      />
-      <path
-        d="M1725 544.63V795.684L1685.77 830H676.914L636.806 794.33V671.511H41.222L3 636.846V130.551L43.2336 94H272.38V144.572L1488.12 153.113L1523.23 182.895V279.696H1685.27L1721.98 313.756L1725 544.63Z"
-        fill="#42019B"
-        fill-opacity="0.5"
-        stroke="#FFB800"
-        stroke-width="5"
-        stroke-miterlimit="16"
-      />
-      <text x="100" y="150">
-        <tspan x="100" y="250" style={style}>
-          Assemble, Research, Compete
-        </tspan>
-        <tspan x="100" y="350" style={textStyle}>
-          ARC — <tspan className={classes.span}>офлайн</tspan> інженерні
-          змагання для студентів.
-        </tspan>
-        <tspan x="100" y="445" style={textStyle}>
-          Збирай власну команду, або знайди нову на проєкті.
-        </tspan>
-        <tspan x="100" y="545" style={textStyle}>
-          Обирай категорію та пропонуй своє вирішення проблеми.
-        </tspan>
-        <tspan x="100" y="640" style={textStyle}>
-          Покажи компаніям України свої навички.
-        </tspan>
-        <tspan x="675" y="770" style={lastStyle}>
-          FIND YOUR ENGINEERING SP<tspan className={classes.span}>ARC</tspan>
-        </tspan>
-      </text>
-    </svg>
   );
 }

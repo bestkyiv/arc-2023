@@ -4,11 +4,12 @@
     font-family: 'Black Ops One';
     font-size: 3vw;
     color: #FFFFFF;
-    background-color: #42019B;
+    background-color: rgb(66, 1, 155, 0.26);
     border: 4px solid #FFB904;
     grid-area: formatAndDate;
     justify-self: center;
     text-align: center;
+    box-shadow: 0 0 10px #FFB904;
 }
 
 @media (max-width: 676px) {
@@ -21,5 +22,5 @@
 }
 
 .p{
-    -webkit-text-stroke: 0.5px #FFB904;
+    -webkit-text-stroke: 1px #FFB904;
 }

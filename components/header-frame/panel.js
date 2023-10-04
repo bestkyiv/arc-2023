@@ -5,9 +5,9 @@ export default function Panel() {
     <div id="header2">
       <div className={"blurb"}>
         <span
-          style={{ fontSize: "20px", lineHeight: "18px", marginTop: "4px" }}
+          style={{ fontSize: "30px", lineHeight: "14px", marginTop: "10px" }}
         >
-          ARC <br /> <span style={{ fontSize: "10px" }}>Kyiv</span>
+          ARC <br /> <span style={{ fontSize: "8px" }}>Kyiv</span>
         </span>
       </div>
       <div className={"icon"}>

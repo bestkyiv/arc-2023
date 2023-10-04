@@ -23,14 +23,16 @@
 
 @media (max-width: 676px){
     .div{
+        padding: 18px 26px;
+        height: 60px;
         justify-self: end;
         position: relative;
-        right: 5%;
-        width: 220px;
+        right: 2%;
+        width: 240px;
     }
     .p {
         width: 190px;
-        font-size: 18px;
+        font-size: 20px;
     }
 }
 
