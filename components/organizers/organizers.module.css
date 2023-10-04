@@ -49,8 +49,8 @@
 .organizer{
     grid-column: span 3;
     position: relative;
-    max-height: 280px;
-    max-width: 240px;
+    max-height: 240px;
+    max-width: 180px;
     overflow: hidden;
 }
 
