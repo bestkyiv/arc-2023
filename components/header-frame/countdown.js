@@ -1,21 +1,25 @@
-import { useCountdown } from "../../hooks/useCountdown";
 import classes from "./countdown.module.css";
+import CONSTANTS from "../../constants";
+import Link from "next/link";
 
-function Countdown({ date, gridArea }) {
-  const [days, hours, minutes, seconds] = useCountdown(date);
-
-  if (days + hours + minutes + seconds <= 0) {
+function Countdown({ days, hours, minutes, seconds }) {
+  if (
+    days + hours + minutes + seconds <= 0 &&
+    new Date(Date.now()) > new Date(CONSTANTS.PROJECT_DATE_FROM)
+  ) {
     return (
-      <p
-          className={classes.p}
-      >
-        Already in progress
-      </p>
+      <Link className={classes.icon_wrapper} href={"#partners"}>
+        <img src={"live-icon.svg"} alt={"Live"} className={classes.icon} />
+      </Link>
     );
   } else {
-    const timeRemaining = `${days} days ${hours
+    const timeRemaining = `${removeMinusValues(days)} days ${removeMinusValues(
+      hours,
+    )
       .toString()
-      .padStart(2, "0")}:${minutes.toString().padStart(2, "0")}:${seconds
+      .padStart(2, "0")}:${removeMinusValues(minutes)
+      .toString()
+      .padStart(2, "0")}:${removeMinusValues(seconds)
       .toString()
       .padStart(2, "0")}`;
     return (
@@ -25,6 +29,8 @@ function Countdown({ date, gridArea }) {
     );
   }
 }
+
+const removeMinusValues = (value) => (value < 0 ? 0 : value);
 
 function Wrapper({ children }) {
   return (
