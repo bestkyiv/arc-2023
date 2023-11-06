@@ -238,7 +238,7 @@ html, body{
 #header2 .links {
     grid-area: links;
     flex-flow: row wrap;
-    font-size: 1.2vw;
+    font-size: 0.92vw;
     font-family: 'Kreadon';
 }
 #header2 .links a {
@@ -262,7 +262,7 @@ html, body{
     }
     #header2 .links a{
         margin: 0 5px 0px 5px;
-        font-size: 2.2vw;
+        font-size: 2vw;
         font-family: 'Kreadon Bold';
     }
 }

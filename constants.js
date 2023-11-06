@@ -24,10 +24,64 @@ module.exports = {
       ],
     },
   },
-  PARTNERS: Array.from(
-    { length: 12 },
-    (partner, index) => `Partner${index + 1}`,
-  ),
+  PARTNERS: {
+    CAREER: [
+      { img: "melexis.svg", alt: "Melexis", link: "https://www.melexis.com/" },
+      { img: "kpi.svg", alt: "KPI", link: "https://www.kpi.ua/" },
+      // { img: "best.svg", alt: "BEST Kyiv", link: "https://best-kyiv.org/" },
+      {
+        img: "t-spark.svg",
+        alt: "t-Spark",
+        link: "https://techspark.engineering/",
+      },
+    ],
+    TASK: [
+      {
+        img: "sombra.png",
+        alt: "Sombra",
+        link: "https://www.sombrainc.com/",
+        alignSelf: "end",
+        justifySelf: "end",
+        width: "300px",
+        placeSelf: "start",
+      },
+      {
+        img: "r_d.png",
+        alt: "r_d",
+        link: "https://robotdreams.cc/uk",
+        alignSelf: "center",
+        justifySelf: "center",
+        placeSelf: "end",
+        width: "40%",
+      },
+      {
+        img: "lifecell.png",
+        alt: "Lifecell",
+        link: "https://www.lifecell.ua/uk/",
+        alignSelf: "center",
+        justifySelf: "center",
+        width: "300px",
+      },
+    ],
+    BARTER: [
+      {
+        img: "velykyi_kvest.png",
+        alt: "Великий квест",
+        link: "https://bigquest.com.ua/",
+      },
+      {
+        img: "nora.png",
+        alt: "Нора",
+        link: "https://www.instagram.com/nora_nastilni_igry/",
+      },
+      {
+        img: "nrg_space.svg",
+        alt: "NRG Space",
+        link: "https://nrgspace.com.ua/",
+      },
+      { img: "burunduk.png", alt: "burunduk", link: "https://burunduk.in.ua/" },
+    ],
+  },
   ORGANIZERS: [
     {
       position: "Main Organizer",

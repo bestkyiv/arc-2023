@@ -17,7 +17,7 @@ export default function Panel() {
         <Link href="#about">Про проєкт</Link>
         <Link href="#categories">Категорії</Link>
         <Link href="#terms-of-participation">Умови участі</Link>
-        {/*<Link href="#partners">Партнери</Link>*/}
+        <Link href="#partners">Партнери</Link>
         <Link href="#about-us">Про нас</Link>
       </div>
     </div>

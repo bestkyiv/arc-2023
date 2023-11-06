@@ -27,15 +27,10 @@ export default function App() {
         <About />
         <Categories />
         <TermsOfParticipation />
-        {/*<Partners />*/}
+        <Partners />
         <Organizers />
         <AboutBest />
         <Faq />
-
-        {/*<Arc fontSize={84}/>;*/}
-        {/*<FormatAndDate />*/}
-        {/*<RegistrationButton/>*/}
-        {/*<Countdown date={CONSTANTS.PROJECT_DATE_FROM}/>*/}
       </main>
       <footer>
         <SocialNetworks />
