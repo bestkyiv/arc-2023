@@ -32,19 +32,4 @@ function Countdown({ days, hours, minutes, seconds }) {
 
 const removeMinusValues = (value) => (value < 0 ? 0 : value);
 
-function Wrapper({ children }) {
-  return (
-    <div
-      style={{
-        padding: "4px",
-        display: "inline-block",
-        width: "",
-        borderTop: "2px solid #FFB904",
-        borderBottom: "2px solid #FFB904",
-      }}
-    >
-      {children}
-    </div>
-  );
-}
 export default Countdown;

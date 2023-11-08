@@ -3,7 +3,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    padding-top: 40px;
+    padding-top: 60px;
 }
 
 .container_desktop, .container_desktop_task{
@@ -17,7 +17,7 @@
     border-top: 5px solid #FFB904;
     border-bottom: 5px solid #FFB904;
     background: rgba(255, 185, 4, 0.50);
-    box-shadow: 5px 0px 30px 2px #FFB904 ;
+    box-shadow: 5px 0 30px 2px #FFB904 ;
 }
 
 .row_career, .row, .row_barter{
@@ -37,12 +37,10 @@
 
 .img, .img_career_desktop{
     width: 100%;
-
-    /*height: 140px;*/
 }
 
 .row_career > a{
-    margin: 0 10px;
+    margin: 0;
 }
 .row_barter > a{
     margin: 0 20px;
@@ -55,27 +53,19 @@
 
 .row_career > a:nth-child(2) {
     align-self: center;
-    width: 100%;
+    width: 130%;
 }
 
 .row_career > a:nth-child(3) {
     align-self: start;
     width: 190%;
 }
-
-.row_career > a:nth-child(4) {
-    align-self: center;
-    width: 190%;
-}
-.row_career > a:nth-child(4) > img{
-    height: 100%;
-}
 /*.container_career > a:nth-child(4) {*/
 /*    */
 /*}*/
 
 .row_barter > a:nth-child(3) {
-    align-self: stretch;
+    width: 100%;
 }
 
 .row_barter > a:nth-child(3) > img{
@@ -86,7 +76,7 @@
     font-family: "Black Ops One";
     color: #FFFFFF;
     font-size: 64px;
-    margin: 30px 0 30px 0;
+    margin: 20px 0;
 }
 
 
@@ -110,16 +100,18 @@
     .header_task, .header{
         font-size: 40px;
         align-self: center;
-        padding: 0 10px;
     }
     .header_task{
         text-align: center;
     }
     .header{
-        padding-left: 30px;
+        padding-left: 4%;
     }
     .container_desktop_task{
         display: none;
+    }
+    .container_desktop{
+        max-width: 750px;
     }
 
 }
@@ -169,6 +161,9 @@
 @media (max-width: 460px){
     .header, .header_task{
         font-size: 24px;
+    }
+    .header{
+        padding-left: 0;
     }
 
     .r_d{

@@ -9,6 +9,7 @@
 
 @media (max-width: 676px){
     .arc{
+        padding-top: 40px;
         position: relative;
         left: 5%;
         justify-self: left;

@@ -52,5 +52,8 @@
         margin-right: 2%;
         width: 80%;
     }
+    .icon_wrapper{
+        max-width: 300px;
+    }
 }
 

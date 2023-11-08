@@ -4,7 +4,6 @@ import Countdown from "@/components/header-frame/countdown";
 import FormatAndDate from "@/components/header-frame/format-and-date";
 import Arc from "@/components/header-frame/arc";
 import CONSTANTS from "../../constants";
-import Panel from "@/components/header-frame/panel";
 import { useCountdown } from "@/hooks/useCountdown";
 
 export default function HeaderFrame() {

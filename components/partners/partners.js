@@ -1,4 +1,3 @@
-import Title from "@/components/title";
 import classes from "./partners.module.css";
 import CONSTANTS from "../../constants";
 
@@ -98,42 +97,5 @@ function BarterDesktop({ partners }) {
         </div>
       </div>
     </>
-  );
-}
-
-function BarterMobile({ partners }) {
-  return (
-    <>
-      <div className={classes.barter}>
-        <div className={classes.container_desktop}>
-          <h3 className={classes.header}>Barter partners</h3>
-          <div className={classes.row_barter}>
-            {partners.map((partner) => (
-              <a href={partner.link} target={"_blank"} key={partner.img}>
-                <img
-                  className={classes.img_career_desktop}
-                  src={partner.img}
-                  alt={partner.alt}
-                />
-              </a>
-            ))}
-          </div>
-        </div>
-      </div>
-    </>
-  );
-}
-
-function YouTubeVideo() {
-  return (
-    <iframe
-      width="100%"
-      height="100%"
-      src="https://www.youtube.com/embed/jfKfPfyJRdk?si=9HuXfDZJS34BqpO0"
-      title="YouTube video player"
-      frameBorder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-      allowFullScreen
-    ></iframe>
   );
 }
