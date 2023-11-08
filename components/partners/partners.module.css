@@ -8,12 +8,11 @@
 
 .container_desktop, .container_desktop_task{
     max-width: 1000px;
-    margin: 0 auto;
-    padding: 20px;
+    margin: 50px auto 0;
 }
 
 .barter{
-    margin: 20px auto;
+    margin: 0 auto;
     border-top: 5px solid #FFB904;
     border-bottom: 5px solid #FFB904;
     background: rgba(255, 185, 4, 0.50);
@@ -25,6 +24,12 @@
     flex-direction: row;
     justify-content: space-between;
 }
+.row{margin-top: 40px}
+
+.row_career{
+    position: relative;
+    top: -80px;
+}
 
 .row > a{
     margin: 0 20px;
@@ -32,6 +37,7 @@
 
 .row_barter{
     align-items: center;
+    margin-bottom: 20px;
 }
 
 
@@ -43,9 +49,8 @@
     margin: 0;
 }
 .row_barter > a{
-    margin: 0 20px;
+    margin: 10px 30px;
 }
-
 .row_career > a:nth-child(1) {
     align-self: center;
     width: 280%;
@@ -64,13 +69,6 @@
 /*    */
 /*}*/
 
-.row_barter > a:nth-child(3) {
-    width: 100%;
-}
-
-.row_barter > a:nth-child(3) > img{
-    height: 100%;
-}
 
 .header, .header_task{
     font-family: "Black Ops One";
@@ -89,7 +87,32 @@
                         "lifecell sombra";
 
 }
+.row_barter > a:nth-child(3) {
+    width: 100%;
+}
 
+
+.r_d{
+    grid-area: r_d;
+    align-self: center;
+    justify-self: center;
+    place-self: end;
+    width: 100%
+}
+
+.sombra{
+    grid-area: sombra;
+    align-self: center;
+    justify-self: center;
+    width: 130%
+}
+
+.lifecell{
+    grid-area: lifecell;
+    align-self: center;
+    justify-self: center;
+    width: 100%
+}
 @media (min-width: 992px){
     .container_mobile{
         display: none;
@@ -113,34 +136,21 @@
     .container_desktop{
         max-width: 750px;
     }
+    .row_barter > a{
+        margin: 10px 20px;
+    }
+    .row_barter > a:nth-child(3) {
+        width: 140%;
+    }
 
-}
-
-.r_d{
-    grid-area: r_d;
-    align-self: center;
-    justify-self: center;
-    place-self: end;
-    width: 100%
-}
-
-.sombra{
-    grid-area: sombra;
-    align-self: center;
-    justify-self: center;
-    width: 100%
-}
-
-.lifecell{
-    grid-area: lifecell;
-    align-self: center;
-    justify-self: center;
-    width: 100%
 }
 
 @media (max-width: 676px){
     .header, .header_task{
         font-size: 28px;
+    }
+    .header{
+        padding-left: 36px;
     }
 
     .r_d{
@@ -154,7 +164,13 @@
 
     .lifecell{
         width: 100%;
+    }
 
+    .row_barter > a{
+        margin: 10px 5px;
+    }
+    .row_career{
+        top: -60px;
     }
 }
 
@@ -163,7 +179,7 @@
         font-size: 24px;
     }
     .header{
-        padding-left: 0;
+        padding-left: 20px;
     }
 
     .r_d{
@@ -176,5 +192,8 @@
 
     .lifecell{
         width: 100%
+    }
+    .row_career{
+        top: -30px;
     }
 }

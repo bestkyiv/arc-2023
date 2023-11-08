@@ -8,9 +8,9 @@ function Countdown({ days, hours, minutes, seconds }) {
     new Date(Date.now()) > new Date(CONSTANTS.PROJECT_DATE_FROM)
   ) {
     return (
-      <Link className={classes.icon_wrapper} href={"#partners"}>
+      <div className={classes.icon_wrapper}>
         <img src={"live-icon.svg"} alt={"Live"} className={classes.icon} />
-      </Link>
+      </div>
     );
   } else {
     const timeRemaining = `${removeMinusValues(days)} days ${removeMinusValues(
