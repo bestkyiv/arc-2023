@@ -43,13 +43,25 @@ function TaskMobile() {
     <>
       <div className={classes.container_mobile}>
         <h3 className={classes.header_task}>Task partners</h3>
-        <a href={""} target={"_blank"} className={classes.lifecell}>
+        <a
+          href={"https://www.lifecell.ua/uk/"}
+          target={"_blank"}
+          className={classes.lifecell}
+        >
           <img className={classes.img} src={"lifecell.svg"} alt={"Lifecell"} />
         </a>
-        <a href={""} target={"_blank"} className={classes.sombra}>
+        <a
+          href={"https://www.sombrainc.com/"}
+          target={"_blank"}
+          className={classes.sombra}
+        >
           <img className={classes.img} src={"sombra.svg"} alt={"Sombra"} />
         </a>
-        <a href={""} target={"_blank"} className={classes.r_d}>
+        <a
+          href={"https://robotdreams.cc/uk"}
+          target={"_blank"}
+          className={classes.r_d}
+        >
           <img className={classes.img} src={"r_d.svg"} alt={"r_d"} />
         </a>
       </div>
